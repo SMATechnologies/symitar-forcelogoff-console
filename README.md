@@ -1,16 +1,28 @@
-# Project Name
-Project description
+# Symitar ForceLogOff from SYMOP
+An example of running the FORCELOGOFF command from SYMOP through OpCon. This could be run as an embedded script or from a UNIX job. You need to feed in a valid SYMOP operator ID and the console number(s) to force log off.
+
+
+# Prerequisites
+* Symitar in-house system running AIX
+* OpCon 17+
+
+# Instructions
+Setup the script in the script repository or on a Unix command line.  The runner for the script could be: /bin/bash $FILE $ARGUMENTS.  The file type would have an extension of ".sh".
+
+Parameters:
+
+* Operator Id
+* Console number
+
+Example execution:
+```
+$ logoffscript.sh [[OPERATOR ID]] 1234
+```
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies
